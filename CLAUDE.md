@@ -17,3 +17,4 @@ Remoto: `https://github.com/msarmengol/show-tokens` (público, rama `main`).
 - Claude Code escribe una línea por bloque de contenido, todas con el mismo `message.id` y el mismo `usage`. Agrupa por id para no contar los tokens varias veces.
 - Los `tool_result` llegan como mensajes `user`: se cuentan aparte, no como prompts.
 - Mensajes y comentarios en español.
+- Los precios de `$precios` y `$preciosRapido` salen de https://platform.claude.com/docs/en/about-claude/pricing. Al cambiarlos, consulta esa página (no los pongas de memoria) y actualiza `$fechaPrecios` en el script y la fecha del README. Los precios no se descargan en tiempo de ejecución a propósito: el script debe funcionar sin red.
